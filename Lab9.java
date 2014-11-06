@@ -15,15 +15,12 @@ public class Lab9 {
 	 */
 	public static void main(String[] args) throws IOException {
 		//YOU DO THIS
-		
 		IO viewConsole = new IO ();
+		Converter converter = new Converter(args[0]);
 
-
-		
-
-		word = viewConsole.getWord(); .// word is passed back need to go to converter
-
-
+		String word = viewConsole.getWord(); .// word is passed back need to go to converter
+		String definition = converter.english(word);
+		viewConsole.printTranslation(word, definition);
 
 
 
